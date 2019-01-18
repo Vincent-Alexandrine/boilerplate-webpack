@@ -3,6 +3,10 @@ module.exports = {
     'plugin:react/recommended'
   ],
   parser: 'babel-eslint',
+  env: {
+    browser: true,
+    node: true,
+  },
   plugins: [
     'react'
   ],
