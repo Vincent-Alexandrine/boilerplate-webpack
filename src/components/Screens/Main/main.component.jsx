@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Styled from './main.styles.js';
+
 export default () => (
-  <div>
+  <Styled>
     <span>ooooyyyee</span>
-  </div>
+  </Styled>
 );
