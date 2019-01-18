@@ -14,6 +14,7 @@ module.exports = {
       Screens: path.resolve(__dirname, 'src/components/Screens/')
     }
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -33,6 +34,9 @@ module.exports = {
             loader: 'html-loader'
           }
         ]
+      }, {
+         test: /\.css$/,
+         use: ['style-loader', 'css-loader']
       }
     ]
   },
