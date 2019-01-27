@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import Styled from './<%= pascalEntityName %>.styled.js';
+import Styled from './Index.styled.js';
 
-class <%= pascalEntityName %> extends PureComponent {
+class Index extends PureComponent {
   static defaulProps = {
 
   };
@@ -15,10 +15,10 @@ class <%= pascalEntityName %> extends PureComponent {
   render() {
     return (
       <Styled>
-
+        <h3>ooooyyyee</h3>
       </Styled>
     );
   }
 }
 
-export default <%= pascalEntityName %>;
+export default Index;

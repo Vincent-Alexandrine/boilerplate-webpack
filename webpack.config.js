@@ -9,9 +9,10 @@ const htmlPage = new HtmlWebPackPlugin({
 module.exports = {
   resolve: {
     alias: {
-      Components: path.resolve(__dirname, 'src/components/Components/'),
-      Containers: path.resolve(__dirname, 'src/components/Containers/'),
-      Screens: path.resolve(__dirname, 'src/components/Screens/')
+      Atoms: path.resolve(__dirname, 'src/components/atoms/'),
+      Molecules: path.resolve(__dirname, 'src/components/molecules/'),
+      Organism: path.resolve(__dirname, 'src/components/organisms/'),
+      Screens: path.resolve(__dirname, 'src/components/screens/')
     }
   },
   devtool: 'source-map',

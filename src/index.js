@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import 'modern-normalize';
-import Main from 'Screens/Main';
+
+import App from './router/index.jsx';
 
 const appRoot = document.getElementById('app-root');
-ReactDOM.render(<Main />, appRoot);
+ReactDOM.render(<App />, appRoot);

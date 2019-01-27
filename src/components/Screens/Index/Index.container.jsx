@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import <%= pascalEntityName %> from './<%= pascalEntityName %>.component.jsx';
+import Index from './Index.component.jsx';
 
 // define Component's props from Store
 // const mapStateToProps = (state) => ({
@@ -24,4 +24,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(<%= pascalEntityName %>);
+)(Index);

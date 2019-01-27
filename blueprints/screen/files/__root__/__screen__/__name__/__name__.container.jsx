@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import <%= pascalEntityName %> from '<%pascalEntityName %>.component.jsx';
+import <%= pascalEntityName %> from './<%= pascalEntityName %>.component.jsx';
 
 // define Component's props from Store
 // const mapStateToProps = (state) => ({
