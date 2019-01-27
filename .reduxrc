@@ -1,7 +1,8 @@
 {
   "sourceBase": "src",
-  "containerPath": "components/containers",
-  "componentPath": "components/components",
+  "atomPath": "components/atoms",
+  "moleculePath": "components/molecules",
+  "organismPath": "components/organisms",
   "screenPath": "components/screens",
   "fileCasing": "pascal"
 }
