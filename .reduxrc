@@ -1,0 +1,7 @@
+{
+  "sourceBase": "src",
+  "containerPath": "components/containers",
+  "componentPath": "components/components",
+  "screenPath": "components/screens",
+  "fileCasing": "pascal"
+}
