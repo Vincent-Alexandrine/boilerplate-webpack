@@ -12,7 +12,8 @@ module.exports = {
       Atoms: path.resolve(__dirname, 'src/components/atoms/'),
       Molecules: path.resolve(__dirname, 'src/components/molecules/'),
       Organism: path.resolve(__dirname, 'src/components/organisms/'),
-      Screens: path.resolve(__dirname, 'src/components/screens/')
+      Screens: path.resolve(__dirname, 'src/components/screens/'),
+      Styles: path.resolve(__dirname, 'src/styles/'),
     }
   },
   devtool: 'source-map',
