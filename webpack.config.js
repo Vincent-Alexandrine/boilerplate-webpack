@@ -13,6 +13,7 @@ module.exports = {
       Molecules: path.resolve(__dirname, 'src/components/molecules/'),
       Organism: path.resolve(__dirname, 'src/components/organisms/'),
       Screens: path.resolve(__dirname, 'src/components/screens/'),
+      Src: path.resolve(__dirname, 'src/'),
       Styles: path.resolve(__dirname, 'src/styles/'),
     }
   },

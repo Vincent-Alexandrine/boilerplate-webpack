@@ -1,3 +1,3 @@
-import <%= pascalEntityName %> from './<%= pascalEntityName %>.container.jsx';
+import <%= pascalEntityName %> from './<%= pascalEntityName %>.container.js';
 
 export default <%= pascalEntityName %>;

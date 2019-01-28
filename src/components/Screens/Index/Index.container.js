@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 import Index from './Index.component.jsx';
 
@@ -9,7 +8,7 @@ import Index from './Index.component.jsx';
 // });
 
 const mapStateToProps = (state) => ({
-
+  
 });
 
 // define Component's cb as props, triggering "dispatch"

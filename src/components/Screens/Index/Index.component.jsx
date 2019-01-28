@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Styled from './Index.styled.js';
 
 class Index extends PureComponent {
-  static defaulProps = {
+  static defaultProps = {
 
   };
 
