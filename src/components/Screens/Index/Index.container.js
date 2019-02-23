@@ -1,3 +1,4 @@
+// @flow
 import { connect } from 'react-redux';
 
 import Index from './Index.component.jsx';
@@ -7,8 +8,8 @@ import Index from './Index.component.jsx';
 //  current: DefineCurrent(state.status, state.smt),   <-- pass props "current" to Component
 // });
 
-const mapStateToProps = (state) => ({
-  
+const mapStateToProps = (state: {}): mixed => ({
+
 });
 
 // define Component's cb as props, triggering "dispatch"
@@ -16,7 +17,7 @@ const mapStateToProps = (state) => ({
 //   onSelect: id => dispatch(selectSmt(id)),   <-- pass props "onSelect" to Component
 // });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch: (x: {}) => mixed): mixed => ({
 
 });
 

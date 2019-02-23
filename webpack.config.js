@@ -7,17 +7,26 @@ const htmlPage = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+  output: {
+    publicPath: '/',
+  },
   resolve: {
     alias: {
+      Actions: path.resolve(__dirname, 'src/actions/'),
+      Assets: path.resolve(__dirname, 'src/assets/'),
       Atoms: path.resolve(__dirname, 'src/components/atoms/'),
       Molecules: path.resolve(__dirname, 'src/components/molecules/'),
-      Organism: path.resolve(__dirname, 'src/components/organisms/'),
+      Organisms: path.resolve(__dirname, 'src/components/organisms/'),
+      Reducers:  path.resolve(__dirname, 'src/reducers/'),
       Screens: path.resolve(__dirname, 'src/components/screens/'),
       Src: path.resolve(__dirname, 'src/'),
       Styles: path.resolve(__dirname, 'src/styles/'),
     }
   },
   devtool: 'source-map',
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
@@ -38,9 +47,15 @@ module.exports = {
           }
         ]
       }, {
-         test: /\.css$/,
-         use: ['style-loader', 'css-loader']
-      }
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }, {
+				test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+				exclude: /\.(js|jsx|css|html|scss|sass)$/,
+				use: [
+					'file-loader'
+				]
+			}
     ]
   },
   plugins: [htmlPage]
