@@ -1,9 +1,6 @@
-// @flow
+const CHANGE_THEME = Symbol();
 
- // $FlowFixMe: symbol
-const CHANGE_THEME: symbol = Symbol();
-
-const changeTheme = (newTheme: string): {} => {
+const changeTheme = (newTheme) => {
   return ({
   type: CHANGE_THEME,
   newTheme,
