@@ -1,9 +1,9 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Styled from './<%= pascalEntityName %>.styled.js';
 
-class <%= pascalEntityName %> extends PureComponent {
+class <%= pascalEntityName %> extends Component {
   static defaultProps = {
 
   };

@@ -1,5 +1,4 @@
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import ReduxWrapper from 'Src/utilities/methods/redux.router.wrapper.js';
 
 import <%= pascalEntityName %> from './<%= pascalEntityName %>.component.jsx';
 
@@ -21,7 +20,7 @@ const mapDispatchToProps = (dispatch) => ({
 
 });
 
-export default connect(
+export default ReduxWrapper(
   mapStateToProps,
   mapDispatchToProps
 )(<%= pascalEntityName %>);

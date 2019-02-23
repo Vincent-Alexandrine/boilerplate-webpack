@@ -1,21 +1,30 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Switch, Route } from 'react-router-dom';
+
+import Welcome from 'Molecules/Welcome';
 
 import Styled from './Index.styled.js';
 
-class Index extends PureComponent {
+class Index extends Component {
   static defaultProps = {
 
   };
 
   static propTypes = {
-
+    match: PropTypes.shape({
+      url: PropTypes.string,
+    }),
   };
 
   render() {
     return (
       <Styled>
-        <h3>ooooyyyee</h3>
+        <main>
+          <Switch>
+            <Route path="/" component={Welcome} />
+          </Switch>
+        </main>
       </Styled>
     );
   }

@@ -1,0 +1,58 @@
+{
+  "translation": {
+    "header": {
+      "title": "Eternes"
+    },
+    "language": {
+      "fr": "french",
+      "en": "english"
+    },
+    "welcome": {
+      "title": "Welcome to le website",
+      "text": "I really dont know what to write for now"
+    },
+
+    "styleguide": {
+      "title": "Im gonna be yo styleguide"
+    },
+
+    "styleIntro": {
+      "title": "Intro: why overshooting ?",
+      "text": "Here Im gonna talked about why a bit everything as design here"
+    },
+
+    "palette": {
+
+    },
+
+    "typography": {
+      "h1": "h1: the h1 title",
+      "h2": "h2: the h2 title",
+      "h3": "h3: the h3 title",
+      "h4": "h4: the h4 subtitle",
+      "h5": "h5: the h5 subtitle",
+      "h6": "h6: the h6 subtitle",
+      "div": "Lorem Khaled Ipsum is a major key to success. Every chance I get, I water the plants, Lion! How’s business? Boomin.",
+      "span": "Lorem Khaled Ipsum is a major key to success. Every chance I get, I water the plants, Lion! How’s business? Boomin.",
+      "i": "It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.",
+      "a": "Kuzco"
+    },
+
+    "components": {
+      "title": "Components !",
+      "text": "okay here Im gonna talk first about the components used here, how everything would be made of out of it",
+      "catch": "u R mesmerized",
+      "stage": "stage",
+      "button": {
+        "title": "Button",
+        "stage": "atom",
+        "description": "A simple button, but which is connected to the theme."
+      }
+    },
+
+    "links": {
+      "title": "Here I may throw some links (which I dont have... yet)",
+      "text": "maybe put the linkedin link on the aside, or over here with a view. OR BOTH."
+    }
+  }
+}

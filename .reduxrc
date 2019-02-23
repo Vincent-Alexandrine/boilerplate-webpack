@@ -4,5 +4,6 @@
   "moleculePath": "components/molecules",
   "organismPath": "components/organisms",
   "screenPath": "components/screens",
+  "componentsPath": "components",
   "fileCasing": "pascal"
 }

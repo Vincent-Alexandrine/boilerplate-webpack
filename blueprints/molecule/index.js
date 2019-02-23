@@ -4,7 +4,15 @@ module.exports = {
     return {
       __molecule__: options => {
         // logic to determine value goes here
-        return  options.settings.getSetting('moleculePath');
+        const { options: opt } = options.entity;
+        const p = opt._[2];
+        const path = p ? p : undefined;
+
+        // if undefined -> /src/components
+        // else -> /src/components/PATH
+        return path
+          ? `${options.settings.getSetting('componentsPath')}/${path}/Molecules`
+          : options.settings.getSetting('moleculePath');
       }
     };
   },
