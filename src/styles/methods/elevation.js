@@ -28,11 +28,10 @@ export function getElevation(level) {
   const values = Object.values(shadows);
   return values.reduce((acc, { vOffset, blur, spread, color }) => {
     const buff = `0 ${vOffset(level)}px ${blur(level)}px ${spread(level)}px ${color}`;
-    if (acc.length) {
+    if (acc.length)
       acc += `, ${buff}`;
-    } else {
+    else
       acc = buff;
-    }
     return acc;
   }, '');
 }
