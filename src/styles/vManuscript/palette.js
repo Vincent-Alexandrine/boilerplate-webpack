@@ -6,6 +6,6 @@ export const primary = {
 
 };
 
-export const secondary= {
+export const secondary = {
 
 };

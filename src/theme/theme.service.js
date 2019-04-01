@@ -12,9 +12,9 @@ class ThemeService {
   static instance;
 
   constructor() {
-    if (ThemeService.instance) {
+    if (ThemeService.instance)
       return ThemeService.instance;
-    }
+
     ThemeService.instance = this;
   }
 
