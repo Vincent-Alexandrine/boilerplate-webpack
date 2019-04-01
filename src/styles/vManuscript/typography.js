@@ -76,7 +76,6 @@ export default css`
   }
 
   a {
-    color: ${props => props.theme.primary.active};
     font-family: ${condensed};
     font-size: 1.5rem;
     &:hover {

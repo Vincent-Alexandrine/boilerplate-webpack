@@ -11,13 +11,10 @@ export default css`
   body {
     font-size: 1.7rem;
     flex: 1 0 100%;
-    color: ${props => props.theme.primary.text};
-    background-color: ${props => props.theme.primary.background};
   }
 
   ::selection {
-    color:  ${props => props.theme.secondary.contrastedText};
-    background-color: ${props => props.theme.secondary.light};
+    
   }
 
   #app-root, #app-root > * {
