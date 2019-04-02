@@ -15,7 +15,9 @@
     "start": "webpack-dev-server --open --mode development",
     "test": "jest"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
@@ -45,6 +47,7 @@
   "dependencies": {
     "i18next": "^14.0.1",
     "modern-normalize": "^0.5.0",
+    "polished": "^3.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
