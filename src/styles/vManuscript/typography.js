@@ -1,83 +1,144 @@
 import { css } from 'styled-components';
+import { fluidRange } from 'polished';
+import iAWriterQuattro from 'Assets/fonts/iAWriterQuattroV.ttf';
 
-import RubikRegular from 'Assets/fonts/Rubik/Rubik-Regular.ttf';
-import RubikMedium from 'Assets/fonts/Rubik/Rubik-Medium.ttf';
-import OxygenRegular from 'Assets/fonts/Oxygen/Oxygen-Regular.ttf';
-import OxygenBold from 'Assets/fonts/Oxygen/Oxygen-Bold.ttf';
-
-const title = 'title';
-const subtitle = 'subtitle';
-const content = 'content';
-const condensed = 'condensed';
+/*
+  fluidRange:
+  min: 5*val/(4*phi)
+  max: 3*val*phi/4
+*/
 
 export default css`
   @font-face {
-    font-family: ${title};
-    src: url(${OxygenBold}) format('truetype');
+    font-family: 'iAWriter';
+    src: url(${iAWriterQuattro}) format('truetype');
   }
-  @font-face {
-    font-family: ${subtitle};
-    src: url(${OxygenRegular}) format('truetype');
-  }
-  @font-face {
-    font-family: ${content};
-    src: url(${RubikRegular}) format('truetype');
-  }
-  @font-face {
-    font-family: ${condensed};
-    src: url(${RubikMedium}) format('truetype');
+
+  * {
+    font-family: 'iAWriter';
+    font-variation-settings: "wght" 450, "SPCG" 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
   }
-  h1, h2, h3 {
-    font-family: ${title};
-  }
-
-  h4, h5, h6 {
-    font-family: ${subtitle};
-  }
 
   h1 {
-    font-size: 3.5rem;
+    font-variation-settings: "wght" 600, "SPCG" 30;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '2.704rem',
+        toSize: '4.247rem',
+      },
+      '32rem',
+      '144rem'
+    )}
   }
 
   h2 {
-    font-size: 3.1rem;
+    font-variation-settings: "wght" 580,"SPCG" 26;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '2.395rem',
+        toSize: '3.762rem',
+      },
+      '32rem',
+      '144rem'
+    )}
   }
 
   h3 {
-    font-size: 2.7rem;
+    font-variation-settings: "wght" 540,"SPCG" 20;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '2.086rem',
+        toSize: '3.277rem',
+      },
+      '32rem',
+      '144rem'
+    )}
   }
 
   h4 {
-    font-size: 2.3rem;
+    font-variation-settings: "wght" 480,"SPCG" 10;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '1.777rem',
+        toSize: '2.791rem',
+      },
+      '32rem',
+      '144rem'
+    )}
   }
 
   h5 {
-    font-size: 2rem;
+    font-variation-settings: "wght" 470,"SPCG" 8;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '1.545rem',
+        toSize: '2.427rem',
+      },
+      '32rem',
+      '144rem'
+    )}
   }
 
   h6 {
-    font-size: 1.8rem;
+    font-variation-settings: "wght" 460,"SPCG" 6;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '1.390rem',
+        toSize: '2.184rem',
+      },
+      '32rem',
+      '144rem'
+    )}
   }
 
   span, p, div {
-    font-family: ${content};
-    font-size: 1.6rem;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '1.236rem',
+        toSize: '1.942rem',
+      },
+      '32rem',
+      '144rem'
+    )}
   }
 
 
   i {
-    font-family: ${condensed};
-    font-size: 1.6rem;
+    font-variation-settings: "wght" 550,"SPCG" 0;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '1.236rem',
+        toSize: '1.942rem',
+      },
+      '32rem',
+      '144rem'
+    )}
     font-style: normal;
   }
 
   a {
-    font-family: ${condensed};
-    font-size: 1.5rem;
+    font-variation-settings: "wght" 550,"SPCG" 0;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '1.159rem',
+        toSize: '1.820rem',
+      },
+      '32rem',
+      '144rem'
+    )}
     &:hover {
       text-decoration: underline;
     }

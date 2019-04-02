@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 
-import Styled from './Index.styled.js';
+import Welcome from './Molecules/Welcome';
 
-const Welcome = () => (
-  <div>Welcome</div>
-);
+import Styled from './Index.styled.js';
 
 class Index extends Component {
   static defaultProps = {
