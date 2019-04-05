@@ -1,11 +1,17 @@
-export const colors = {
+const colors = {
 
 } ;
 
-export const primary = {
+const primary = {
 
 };
 
-export const secondary = {
+const secondary = {
 
+};
+
+export default {
+  colors,
+  primary,
+  secondary,
 };
