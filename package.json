@@ -10,9 +10,9 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --config ./webpack/index.js",
     "lint": "eslint \"src/\" --ext \".js\" --ext \".jsx\"",
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --open --mode development --config ./webpack/index.js",
     "test": "jest"
   },
   "pre-commit": [
