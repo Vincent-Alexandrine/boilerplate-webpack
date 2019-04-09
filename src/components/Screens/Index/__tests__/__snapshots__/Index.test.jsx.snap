@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index component should match snapshot 1`] = `
+<div
+  className=""
+>
+  <main>
+    <div
+      className=""
+    >
+      <h1>
+        welcome.h1
+      </h1>
+      <h2>
+        welcome.h2
+      </h2>
+      <h3>
+        welcome.h3
+      </h3>
+      <h4>
+        welcome.h4
+      </h4>
+      <h5>
+        welcome.h5
+      </h5>
+      <h6>
+        welcome.h6
+      </h6>
+      <br />
+      <div>
+        welcome.div
+        <span>
+          <i>
+            welcome.i
+            <a
+              href="http://khaledipsum.com/"
+            >
+              welcome.a
+            </a>
+          </i>
+        </span>
+      </div>
+    </div>
+  </main>
+</div>
+`;
+
+exports[`Index styled component should match snapshot 1`] = `
+<div
+  className=""
+/>
+`;

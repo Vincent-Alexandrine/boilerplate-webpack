@@ -5,20 +5,18 @@ import 'jest-styled-components';
 import <%= pascalEntityName %> from '../<%= pascalEntityName %>.component.jsx';
 import Styled from '../<%= pascalEntityName %>.styled.js';
 
-beforeAll('Component: <%= pascalEntityName %>', () => {
-  test('<%= pascalEntityName %> component should match snapshot', () => {
-    const component = renderer
-      .create(<<%= pascalEntityName %> />);
-    const tree = component.toJSON();
+test('<%= pascalEntityName %> component should match snapshot', () => {
+  const component = renderer
+    .create(<<%= pascalEntityName %> />);
+  const tree = component.toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+  expect(tree).toMatchSnapshot();
+});
 
-  test('<%= pascalEntityName %> styled component should match snapshot', () => {
-    const component = renderer
-      .create(<Styled />);
-    const tree = component.toJSON();
+test('<%= pascalEntityName %> styled component should match snapshot', () => {
+  const component = renderer
+    .create(<Styled />);
+  const tree = component.toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+  expect(tree).toMatchSnapshot();
 });
