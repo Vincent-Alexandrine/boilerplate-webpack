@@ -6,7 +6,7 @@ const state = {
   current: vManuscript.name,
 };
 
-const changeTheme = (state, { newTheme }) => ({
+export const changeTheme = (state, { newTheme }) => ({
   ...state,
   current: newTheme,
 });

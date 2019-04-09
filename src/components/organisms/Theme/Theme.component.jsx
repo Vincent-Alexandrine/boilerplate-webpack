@@ -9,7 +9,7 @@ import GlobalStyle from './Theme.styled.js';
 
 class Theme extends Component {
   static defaultProps = {
-
+    currentTheme: vManuscript.name,
   };
 
   static propTypes = {

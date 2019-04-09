@@ -5,20 +5,18 @@ import 'jest-styled-components';
 import Theme from '../Theme.component.jsx';
 import Styled from '../Theme.styled.js';
 
-beforeAll('Component: Theme', () => {
-  test('Theme component should match snapshot', () => {
-    const component = renderer
-      .create(<Theme />);
-    const tree = component.toJSON();
+test('Theme component should match snapshot', () => {
+  const component = renderer
+    .create(<Theme />);
+  const tree = component.toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+  expect(tree).toMatchSnapshot();
+});
 
-  test('Theme styled component should match snapshot', () => {
-    const component = renderer
-      .create(<Styled />);
-    const tree = component.toJSON();
+test('Theme styled component should match snapshot', () => {
+  const component = renderer
+    .create(<Styled />);
+  const tree = component.toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
+  expect(tree).toMatchSnapshot();
 });

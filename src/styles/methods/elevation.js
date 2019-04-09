@@ -20,7 +20,7 @@ const shadows = {
 };
 
 /**
-* returns a string of 3 box-shadow value in function of an integer
+* returns a string of 3 box-shadow value in function of an integer (reverse ingeenering of Material ftw 💃 (but not 100% accurate though))
 * @param  {integer}  level
 * @return {string}
 */

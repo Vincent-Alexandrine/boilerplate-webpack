@@ -79,16 +79,16 @@ module.exports = {
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file.mock.js",
-    "\\.(css)$": "<rootDir>/__mocks__/style.mock.js",
-    "^Actions(.*)$": "<rootDir>/src/actions/",
-    "^Assets(.*)$": "<rootDir>/src/assets",
-    "^Atoms(.*)$": "<rootDir>/src//components/atoms/",
-    "^Molecules(.*)$": "<rootDir>/src/components/molecules/",
-    "^Organisms(.*)$": "<rootDir>/src/components/organisms/",
-    "^Reducers(.*)$":  "<rootDir>/src/reducers/",
-    "^Screens(.*)$": "<rootDir>/src/components/screens/",
-    "^Src(.*)$": "<rootDir>/src/",
-    "^Styles(.*)$": "<rootDir>/src/styles"
+    // "\\.(css)$": "<rootDir>/__mocks__/style.mock.js",
+    "^Actions(.*)$": "<rootDir>/src/actions/$1",
+    "^Assets(.*)$": "<rootDir>/src/assets/$1",
+    "^Atoms(.*)$": "<rootDir>/src//components/atoms/$1",
+    "^Molecules(.*)$": "<rootDir>/src/components/molecules/$1",
+    "^Organisms(.*)$": "<rootDir>/src/components/organisms/$1",
+    "^Reducers(.*)$": "<rootDir>/src/reducers/$1",
+    "^Screens(.*)$": "<rootDir>/src/components/screens/$1",
+    "^Src(.*)$": "<rootDir>/src/$1",
+    "^Styles(.*)$": "<rootDir>/src/styles/$1"
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
