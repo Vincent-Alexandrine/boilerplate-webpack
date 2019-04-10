@@ -11,7 +11,7 @@
 * [jest](https://jestjs.io/) -> test 📐
 * [eslint](https://eslint.org/) -> lint ✨
 
-** *bonus*:**
+__*bonus*:__
 * [blueprints](https://github.com/SpencerCDixon/redux-cli) -> components generator 🏭
 * [elevation](https://material.io/design/environment/elevation.html) -> box-shadow function based on Material's elevation system 👥
 * [iA-Fonts](https://github.com/iaolo/iA-Fonts) -> variable font changing its spacing and shape from thin to bold via params (and not font-weight) ⚖️
@@ -60,7 +60,9 @@ The components are divided like so:
 
 
 ----
-![repetitive](https://i.gifer.com/7MSt.gif)
+
+<img src="https://media.giphy.com/media/3o6Mbegp3JcwKKC2cw/giphy.gif" alt="repetitive" width="30%" height="30%">
+
 
 ## Blueprints
 
