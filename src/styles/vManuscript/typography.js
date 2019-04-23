@@ -114,7 +114,7 @@ export default css`
   }
 
 
-  i {
+  i, button {
     font-variation-settings: "wght" 550,"SPCG" 0;
     ${fluidRange(
       {
@@ -129,7 +129,7 @@ export default css`
   }
 
   a {
-    font-variation-settings: "wght" 550,"SPCG" 0;
+    text-decoration: none;
     ${fluidRange(
       {
         prop: 'font-size',
@@ -139,6 +139,10 @@ export default css`
       '32rem',
       '144rem'
     )}
+    &, & * {
+      font-variation-settings: "wght" 550,"SPCG" 0;
+    }
+
     &:hover {
       text-decoration: underline;
     }
