@@ -1,7 +1,9 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 import 'jest-styled-components';
+import theme from 'Styles/vManuscript';
 
 import Index from '../Index.component.jsx';
 import Styled from '../Index.styled.js';
@@ -9,9 +11,11 @@ import Styled from '../Index.styled.js';
 test('Index component should match snapshot', () => {
   const component = renderer
     .create(
-      <MemoryRouter>
-        <Index />
-      </MemoryRouter>
+      <ThemeProvider theme={theme}>
+        <MemoryRouter>
+          <Index theme={theme} />
+        </MemoryRouter>
+      </ThemeProvider>
     );
   const tree = component.toJSON();
 
@@ -20,7 +24,11 @@ test('Index component should match snapshot', () => {
 
 test('Index styled component should match snapshot', () => {
   const component = renderer
-    .create(<Styled />);
+    .create(
+      <ThemeProvider theme={theme}>
+        <Styled />
+      </ThemeProvider>
+    );
   const tree = component.toJSON();
 
   expect(tree).toMatchSnapshot();

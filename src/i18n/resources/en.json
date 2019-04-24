@@ -1,5 +1,187 @@
 {
   "translation": {
+    "language": {
+      "en": "english",
+      "fr": "french"
+    },
+    "navigation": {
+      "about": "about",
+      "palette": "palette",
+      "test": "test",
+      "typography": "typography"
+    },
+    "typography": {
+      "header": {
+        "tag": "Tag",
+        "size": "size (rem)",
+        "average": "average",
+        "min": "min",
+        "max": "max",
+        "weight": "weight (400-700 u)",
+        "spacing": "spacing (0-150 u)"
+      },
+      "intro": "For the typography of the app, the variable font IAWriter is used. Variable fonts allows some customization on your typo via available parameters specific to the font. Classical fonts usually are used in multiple versions; a file for thin, a file for medium, a file for bold... Variable font has only one file for all those different variations, and even more !",
+      "tags": [
+        {
+          "tag": "H1",
+          "average": "3.5",
+          "min": "2.704",
+          "max": "4.247",
+          "weight": "600",
+          "spacing": "30"
+        }, {
+          "tag": "H2",
+          "average": "3.1",
+          "min": "2.395",
+          "max": "3.762",
+          "weight": "580",
+          "spacing": "26"
+        }, {
+          "tag": "H3",
+          "average": "2.7",
+          "min": "2.086",
+          "max": "3.277",
+          "weight": "540",
+          "spacing": "20"
+        }, {
+          "tag": "H4",
+          "average": "2.7",
+          "min": "1.777",
+          "max": "2.791",
+          "weight": "480",
+          "spacing": "10"
+        }, {
+          "tag": "H5",
+          "average": "2",
+          "min": "1.545",
+          "max": "2.427",
+          "weight": "470",
+          "spacing": "8"
+        }, {
+          "tag": "H6",
+          "average": "1.8",
+          "min": "1.390",
+          "max": "2.184",
+          "weight": "460",
+          "spacing": "6"
+        }, {
+          "tag": "div, p, span",
+          "average": "1.6",
+          "min": "1.236",
+          "max": "1.942",
+          "weight": "450",
+          "spacing": "0"
+        }, {
+          "tag": "div, p, span",
+          "average": "1.6",
+          "min": "1.236",
+          "max": "1.942",
+          "weight": "450",
+          "spacing": "0"
+        }, {
+          "tag": "button",
+          "average": "1.6",
+          "min": "1.236",
+          "max": "2.184",
+          "weight": "550",
+          "spacing": "0"
+        }, {
+          "tag": "i",
+          "average": "1.6",
+          "min": "1.236",
+          "max": "2.184",
+          "weight": "550",
+          "spacing": "0"
+        }, {
+          "tag": "a",
+          "average": "1.5",
+          "min": "1.159",
+          "max": "1.820",
+          "weight": "550",
+          "spacing": "0"
+        }
+      ],
+      "h1": {
+        "tag": "H1",
+        "average": "3.5",
+        "min": "2.704",
+        "max": "4.247",
+        "weight": "600",
+        "spacing": "30"
+      },
+      "h2": {
+        "tag": "H2",
+        "average": "3.1",
+        "min": "2.395",
+        "max": "3.762",
+        "weight": "580",
+        "spacing": "26"
+      },
+      "h3": {
+        "tag": "H3",
+        "average": "2.7",
+        "min": "2.086",
+        "max": "3.277",
+        "weight": "540",
+        "spacing": "20"
+      },
+      "h4": {
+        "tag": "H4",
+        "average": "2.7",
+        "min": "1.777",
+        "max": "2.791",
+        "weight": "480",
+        "spacing": "10"
+      },
+      "h5": {
+        "tag": "H5",
+        "average": "2",
+        "min": "1.545",
+        "max": "2.427",
+        "weight": "470",
+        "spacing": "8"
+      },
+      "h6": {
+        "tag": "H6",
+        "average": "1.8",
+        "min": "1.390",
+        "max": "2.184",
+        "weight": "460",
+        "spacing": "6"
+      },
+      "div": {
+        "tag": "div, p, span",
+        "average": "1.6",
+        "min": "1.236",
+        "max": "1.942",
+        "weight": "450",
+        "spacing": "0"
+      },
+      "button": {
+        "tag": "button",
+        "average": "1.6",
+        "min": "1.236",
+        "max": "2.184",
+        "weight": "550",
+        "spacing": "0"
+      },
+      "i": {
+        "tag": "i",
+        "average": "1.6",
+        "min": "1.236",
+        "max": "2.184",
+        "weight": "550",
+        "spacing": "0"
+      },
+      "a": {
+        "tag": "a",
+        "average": "1.5",
+        "min": "1.159",
+        "max": "1.820",
+        "weight": "550",
+        "spacing": "0"
+      }
+    },
     "welcome": {
       "h1": "H1 Title: Welcome",
       "h2": "H2 Title: a slightly smaller welcome",

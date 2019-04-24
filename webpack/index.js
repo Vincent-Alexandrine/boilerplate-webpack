@@ -4,13 +4,20 @@ const prodConfig = require('./config/prod.js');
 
 module.exports = (env, argv) => {
   let envConfig;
-
+  const { plugins: cmnPlugins, ...cmnCfg } = commonConfig;
   if (argv.mode === 'development')
     envConfig = devConfig;
   else if (argv.mode === 'production')
     envConfig = prodConfig;
+
+  const { plugins: envPlugins, ...envCfg } = envConfig;
+  const plugins = envPlugins
+    ? [ ...cmnPlugins, ...envPlugins]
+    : [ ...cmnPlugins];
+
   return {
-    ...commonConfig,
-    ...envConfig
+    ...cmnCfg,
+    ...envCfg,
+    plugins,
   };
 };

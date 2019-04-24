@@ -18,7 +18,7 @@ __*bonus*:__
 * [fluid typography](https://css-tricks.com/snippets/css/fluid-typography/) -> typo resized in function of very screen width, and not by media queries steps 🌊
 
 
-## Setup
+## Commands
 
 #### Install
 
@@ -31,6 +31,20 @@ yarn
 ```bash
 yarn start
 ```
+
+#### test
+
+```bash
+yarn test
+```
+
+#### analyze
+Give informations about the bundle's size.
+
+```bash
+yarn analyze
+```
+
 ## Atomic design
 
 For the components, the files organization follows the [atomic design](http://atomicdesign.bradfrost.com/chapter-2/).
@@ -110,3 +124,12 @@ Here, a theming service allows to use multiple themes if needed (default theming
 For using it, a theme object has to be added in the theme's map, with its name has key.
 
 For now it is just storing and returning themes, but the **theme** object used by styled-components can be composed of couple of getter, for returning values needed, instead of storing the whole objects with all the possible values.
+
+----
+ ## track to scout
+
+* [styled-theming](https://github.com/styled-components/styled-theming) allows a better organization for theming, and can be useful for theming via props string (ie: dark, contained, outlined ...)
+
+* The __build__ isn't functional yet. To test the build locally, the __BrowserRouter__ has to be replaced by a __MemoryRouter__. The build deployed hasn't been tested yet ¯\\\_(ツ)_/¯.
+
+* When a backend may be started and needed, see how to integrate [graphQL](https://graphql.org/learn/).
