@@ -1,10 +1,32 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const manifestPlugin = require('webpack-pwa-manifest');
+const faviconPlugin = require('favicons-webpack-plugin');
 
 const htmlPage = new HtmlWebPackPlugin({
   template: path.resolve(__dirname, '../../src/index.html'),
   filename: 'index.html',
 });
+
+const manifest = new manifestPlugin({
+  author: "Vincent Alexandrine",
+  manifest_version: 1,
+  short_name: "boilerplate",
+  name: "React,styled-components boilerplate",
+  icons: [{
+    src: path.resolve(__dirname, "../../src/assets/svg/logo.svg"),
+    sizes: [48,96]
+  }],
+  start_url: "/",
+  display: "standalone",
+  background: "#FEFEFA",
+  theme: "#FEFEFA",
+  theme_color: "#E9CDE9"
+});
+
+const favicon = new faviconPlugin(
+  path.resolve(__dirname, "../../src/assets/favicon.png")
+)
 
 module.exports = {
   entry: path.resolve(__dirname, '../../src/index.js'),
@@ -58,5 +80,5 @@ module.exports = {
       },
     ]
   },
-  plugins: [htmlPage],
+  plugins: [htmlPage, manifest, favicon],
 };
